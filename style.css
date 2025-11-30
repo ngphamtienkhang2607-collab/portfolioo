@@ -1,0 +1,89 @@
+/* ===== Reset styles ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    color: red;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* ===== Menu hover effect (underline slide) ===== */
+.nav-link {
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== Intro section ===== */
+.intro {
+    padding: 50px 60px;
+    max-width: 650px;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* ===== Hover effect for all text ===== */
+.hover-text {
+    transition: 0.3s;
+}
+
+.hover-text:hover {
+    color: #ff4d4d;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* ===== Button hover effect ===== */
+.resume-btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.resume-btn:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
