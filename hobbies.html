@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobby | Hoan Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="./works.html">Works</a>
+      <a href="./hobbies.html" class="active">Hobbies</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+  </header>
+
+  <section class="hobby-section">
+    <h1>Hobby</h1>
+
+<div class="hobby-item">
+  <h2>Teaching IT & Chess at Trung Son Primary School</h2>
+  <div class="meta">13 Sep 2025 – Present | Teaching, Education</div>
+  <p>I spend my weekends teaching both IT and chess to students at Trung Son Primary School. Helping young learners build strong foundations and confidence is one of my most meaningful hobbies.</p>
+</div>
+
+<div class="hobby-item">
+  <h2>Building a Chess Web Analysis Tool – limachess.com</h2>
+  <div class="meta">Jan 2025 – Present | Web Development, Chess</div>
+  <p>I’m developing limachess.com, a custom chess analysis platform that uses Stockfish and animated rendering to help players review games more professionally and enjoyably.</p>
+</div>
+
+
+<div class="hobby-item">
+  <h2>Running LIMA Chess YouTube Channel</h2>
+  <div class="meta">2024 – Present | Content Creation, Chess</div>
+  <p>I manage the LIMA Chess YouTube channel, producing daily highlight videos showcasing brilliant moves, tactical puzzles, and game analysis—publishing around four videos every day.</p>
+</div>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contact.html">Contact</a>
+</nav>
